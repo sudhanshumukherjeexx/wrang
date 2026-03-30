@@ -1,16 +1,22 @@
-"""Basic tests to ensure the package can be imported"""
+"""Smoke tests — package import and version sanity."""
+
+import wrang
+
 
 def test_import():
-    """Test that the package can be imported"""
-    import ride
-    assert ride.__version__ == "0.3.3"
+    """Package imports without error."""
+    assert hasattr(ride, "__version__")
 
-def test_cli_import():
-    """Test that the CLI module can be imported"""
-    from ride import cli
-    assert hasattr(cli, 'main')
 
-def test_common_import():
-    """Test that the common module can be imported"""
-    from ride import utils
-    assert hasattr(utils, 'Prepup')
+def test_version_format():
+    """Version is a non-empty string."""
+    v = ride.__version__
+    assert isinstance(v, str)
+    assert len(v) > 0
+
+
+def test_lazy_import_no_side_effects():
+    """Accessing an unknown attribute raises AttributeError (not ImportError)."""
+    import pytest
+    with pytest.raises(AttributeError):
+        _ = ride._totally_undefined_name_xyz

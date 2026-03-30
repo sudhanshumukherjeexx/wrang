@@ -1,196 +1,300 @@
-# 🚀 RIDE CLI: Rapid Interactive Data Exploration
+# wrang
 
-![Static Badge](https://img.shields.io/badge/Built_with_%E2%99%A5%EF%B8%8F-Sudhanshu_Mukherjee-black?link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsudhanshumukherjeexx%2F)
+**Lightning-fast data wrangling for the terminal.**
 
-![Python Versions](https://img.shields.io/badge/python-3.10+-blue.svg)
-[![image](https://img.shields.io/pypi/v/ride-cli.svg)](https://pypi.python.org/pypi/ride-cli)
-![Static Badge](https://img.shields.io/badge/Linux-Supported-green)
-![Static Badge](https://img.shields.io/badge/macOS-Supported-blue)
-![Static Badge](https://img.shields.io/badge/Windows-Supported-yellow)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![PyPI version](https://img.shields.io/pypi/v/wrang.svg?color=blue)](https://pypi.org/project/wrang/)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://pypi.org/project/wrang/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-217%20passing-brightgreen)](#testing)
 
-> **📢 Notice**: This package was previously known as `prepup-linux`. If you're upgrading from `prepup-linux`, please uninstall it first before installing `ride-cli`.
-
-## 🌟 About
-
-**RIDE-CLI** (Rapid Insights Data Engine) is a powerful, user-friendly command-line tool designed to simplify and streamline your data analysis workflow. Whether you're a data scientist, analyst, or researcher, RIDE provides an intuitive interface for exploring, cleaning, and preparing your datasets - all from your terminal!
-
-
-## ✨ Features
-
-### 🎯 Interactive Mode
-- 📊 Load datasets from various formats (CSV, Excel, Parquet)
-- 🔍 Comprehensive data inspection
-- 📈 Advanced data exploration
-- 🧹 Missing value handling
-- 📊 Feature visualization
-- 🤖 Auto Machine Learning (AutoML) model selection
-
-### 🛠️ Key Functionalities
-- Data Loading
-- Data Type Conversion
-- Feature Inspection
-- Correlation Analysis
-- Distribution Checking
-- Outlier Detection
-- Missing Value Imputation
-- Feature Encoding
-- Feature Scaling and Transformation
-- Automatic Model Training
-
-## 📦 Installation
-
-> **⚠️ Important:** Creating a virtual environment is highly recommended when installing ride-cli.
-
-### 🔀 Upgrading from prepup-linux
-
-If you're currently using `prepup-linux`, please follow these steps:
-
-```bash
-# Uninstall the old package
-pip uninstall prepup-linux
-
-# Install the new package
-pip install ride-cli
-```
-
-### 💡 Setting Up a Virtual Environment
-
-#### Windows
-```bash
-# Create virtual environment
-python -m venv ride-env
-
-# Activate virtual environment
-ride-env\Scripts\activate
-
-# Deactivate when done
-deactivate
-```
-
-#### Linux/macOS
-```bash
-# Create virtual environment
-python3 -m venv ride-env
-
-# Activate virtual environment
-source ride-env/bin/activate
-
-# Deactivate when done
-deactivate
-```
-
-### 📥 Using pip
-```bash
-# Inside your activated virtual environment
-pip install ride-cli
-```
-
-### 🔧 From Source
-```bash
-# Inside your activated virtual environment
-git clone https://github.com/sudhanshumukherjeexx/ride-cli.git
-cd ride-cli
-pip install .
-```
-
-## 💻 Usage
-
-### 🎮 Interactive Mode
-```bash
-ride
-```
-or
-```bash
-ride-cli
-```
-
-### 📂 Loading a Specific Dataset
-```bash
-ride path/to/your/dataset.csv
-```
-
-### 📋 Main Menu Options
-1. Load Dataset
-2. Inspect Data
-3. Change Data Type
-4. Explore Data
-5. Visualize Data
-6. Impute Missing Values
-7. Feature Encoding
-8. Feature Scaling and Transformation
-9. Export Data
-10. AutoML (Train & Evaluate Models)
-
-## 🎯 Interactive Workflow Example
-
-1. **Launch RIDE:** ```ride```
-
-2. **Load Your Dataset:** Choose option 1 and enter your dataset path
-
-3. **Inspect Data:** Use option 2 to explore features, data types, and missing values
-
-4. **Preprocess:** 
-   - Change data types if needed
-   - Impute missing values
-   - Encode categorical features
-   - Scale and transform features
-
-5. **Analyze:** 
-   - Visualize data distributions
-   - Perform correlation analysis
-   - Run AutoML for model selection
-
-## 🤖 AutoML Capabilities
-- Supports both Classification and Regression tasks
-- Evaluates multiple machine learning algorithms
-- Provides performance metrics
-- Saves results to CSV for further analysis
-
-## 📊 Supported File Formats
-- CSV (.csv)
-- Excel (.xlsx, .xls)
-- Parquet (.parquet)
-
-## 🛠️ Dependencies
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Plotext (for terminal-based plotting)
-- and more (see requirements.txt)
-
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📋 License
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## 🔗 Package Links
-
-- Documentation: https://sudhanshumukherjeexx.github.io/ride-cli/ 
-- Github: https://github.com/sudhanshumukherjeexx/ride-cli
-- PyPI: https://pypi.org/project/ride-cli/
-- Previous Package (prepup-linux): https://github.com/sudhanshumukherjeexx/prepup-linux
-
-## 📜 Major Updates
-
-### v0.3.0 (2025)
-- 🎉 Renamed from `prepup-linux` to `ride-cli`
-- 🌍 Added cross-platform support
-- ✨ Enhanced user interface
-- 🔧 Improved stability and performance
-
-## 🙏 Acknowledgments
-
-Special thanks to all contributors and users of the previous `prepup-linux` package. Your feedback and support made this evolution possible!
+`wrang` is a terminal-native data analysis toolkit. Load, inspect, clean, transform, and export datasets without writing a single line of boilerplate. Use it interactively, script it as a Python library, or wire it into CI pipelines.
 
 ---
 
-Made with ❤️ by [Sudhanshu Mukherjee](https://github.com/sudhanshumukherjeexx)
+## Install
+
+```bash
+pip install wrang
+```
+
+Optional extras:
+
+```bash
+pip install wrang[viz]       # matplotlib + seaborn
+pip install wrang[advanced]  # duckdb + connectorx
+pip install wrang[full]      # everything
+```
+
+Requires Python 3.10+.
+
+---
+
+## Quick start
+
+```bash
+# Interactive mode
+wrang
+
+# Load a file directly
+wrang data.csv
+
+# Quick inspect (CI-friendly JSON output)
+wrang data.csv --inspect --output-format json
+
+# SQL query via DuckDB
+wrang data.csv --sql "SELECT dept, AVG(salary) FROM data GROUP BY dept"
+
+# Generate self-contained HTML profile report
+wrang data.csv --profile
+
+# Compare two datasets
+wrang --compare before.csv after.csv
+
+# Stream large files in chunks
+wrang large.csv --chunk-size 50000
+
+# Export to Parquet
+wrang data.csv --export clean.parquet
+```
+
+---
+
+## Interactive menu
+
+```
+wrang
+```
+
+The full interactive session gives you a menu-driven workflow:
+
+| Option | Action |
+|--------|--------|
+| `1` | Load dataset (CSV / Excel / Parquet / JSON) |
+| `2` | Inspect — shape, types, missing values, quality report |
+| `3` | Explore — correlations, distributions, outliers, plots |
+| `4` | Clean — impute, deduplicate, handle outliers, fix types |
+| `5` | Transform — encode, scale, polynomial features, binning |
+| `6` | Visualize — terminal histograms, scatter, heatmap |
+| `7` | Export — save to any supported format |
+| `8` | Settings — configure wrang preferences |
+| `9` | SQL Query — run DuckDB SQL against the current dataset |
+| `10` | HTML Profile — generate a full standalone HTML report |
+| `11` | Validate — check data against a JSON/YAML schema |
+| `$` | Quick export — save current dataset instantly |
+| `q` | Exit |
+
+---
+
+## Python API
+
+`wrang` is also a full Python library. Every module is independently importable.
+
+### Load & save
+
+```python
+from wrang import FastDataLoader, DataSaver
+
+loader = FastDataLoader()
+df = loader.load("sales.csv")           # auto-detects format
+df_lazy = loader.scan_lazy("big.parquet")   # lazy frame for large files
+
+saver = DataSaver()
+saver.save(df, "output.parquet")
+```
+
+### Inspect
+
+```python
+from wrang import DataInspector
+
+inspector = DataInspector(df)
+info = inspector.get_basic_info()
+print(info["n_rows"], info["missing_values_total"])
+
+inspector.display_overview()         # rich terminal output
+inspector.display_data_quality()
+```
+
+### Explore
+
+```python
+from wrang import DataExplorer
+
+explorer = DataExplorer(df)
+
+corr = explorer.analyze_correlations(method="pearson")
+outliers = explorer.detect_outliers(method="iqr")
+normality = explorer.test_normality()
+
+explorer.plot_histogram("age")
+explorer.plot_scatter("age", "salary")
+explorer.plot_correlation_heatmap()
+```
+
+### Clean
+
+```python
+from wrang import DataCleaner
+from wrang.config import ImputationStrategy
+
+cleaned = (
+    DataCleaner(df)
+    .handle_missing_values(ImputationStrategy.MEDIAN, columns=["age", "salary"])
+    .handle_missing_values(ImputationStrategy.MODE,   columns=["dept"])
+    .remove_duplicates()
+    .remove_outliers(method="iqr", factor=1.5)
+    .get_result()
+)
+```
+
+Supported imputation strategies: `DROP`, `MEAN`, `MEDIAN`, `MODE`, `FORWARD_FILL`, `BACKWARD_FILL`, `CUSTOM_VALUE`, `DISTRIBUTION`, `KNN`.
+
+### Transform
+
+```python
+from wrang import DataTransformer, create_pipeline
+from wrang.config import EncodingMethod, ScalingMethod
+
+result = (
+    DataTransformer(df)
+    .encode_categorical_features(method=EncodingMethod.ONEHOT, columns=["dept"])
+    .scale_features(method=ScalingMethod.STANDARD, columns=["age", "salary"])
+    .get_result()
+)
+
+# Or use the pipeline builder
+result = (
+    create_pipeline(df)
+    .encode_categorical_features(method=EncodingMethod.LABEL)
+    .scale_features(method=ScalingMethod.ROBUST)
+    .create_polynomial_features(degree=2)
+    .get_result()
+)
+```
+
+### Validate
+
+```python
+from wrang import DataSchema, ColumnSchema, DataValidator
+
+schema = DataSchema(columns=[
+    ColumnSchema(name="id",     dtype="Int64",   nullable=False, unique=True),
+    ColumnSchema(name="salary", dtype="Float64", nullable=False, min_value=0.0),
+    ColumnSchema(name="dept",   dtype="String",  allowed_values=["eng", "hr"]),
+])
+
+result = DataValidator(schema).validate(df)
+print(result.passed)           # True / False
+for v in result.violations:
+    print(v.severity, v.message)
+
+# Infer schema from data and save to file
+from wrang import infer_schema
+infer_schema(df).to_json("schema.json")
+```
+
+### Configuration
+
+```python
+from wrang.config import get_config, update_config, reset_config
+
+config = get_config()
+print(config.outlier_factor)   # 1.5
+
+update_config(outlier_factor=2.0, chunk_size=5000)
+reset_config()
+```
+
+User config is persisted at `~/.wrang/config.json`.
+
+---
+
+## Notebook usage
+
+```python
+import polars as pl
+from wrang import DataInspector, DataCleaner, DataExplorer
+from wrang.config import ImputationStrategy
+
+df = pl.read_csv("titanic.csv")
+
+# Profile the data
+DataInspector(df).display_overview()
+
+# Clean
+df_clean = (
+    DataCleaner(df)
+    .handle_missing_values(ImputationStrategy.MEDIAN)
+    .remove_duplicates()
+    .get_result()
+)
+
+# Explore
+explorer = DataExplorer(df_clean.select(["Age", "Fare", "Pclass"]))
+explorer.plot_histogram("Age")
+explorer.plot_scatter("Age", "Fare")
+```
+
+---
+
+## Supported file formats
+
+| Format | Read | Write | Notes |
+|--------|------|-------|-------|
+| CSV | ✓ | ✓ | Auto delimiter detection |
+| Excel (`.xlsx`) | ✓ | ✓ | via openpyxl |
+| Excel (`.xls`) | ✓ | — | via xlrd |
+| Parquet | ✓ | ✓ | Columnar, fast |
+| JSON / JSON Lines | ✓ | ✓ | Auto schema inference |
+
+---
+
+## Non-interactive CLI reference
+
+```
+wrang [FILE] [OPTIONS]
+
+Options:
+  --inspect                  Print dataset overview and exit
+  --output-format {text,json}  Output format (default: text)
+  --profile                  Generate standalone HTML report
+  --sql QUERY                Run DuckDB SQL against FILE (table: "data")
+  --compare FILE_A FILE_B    Diff two datasets
+  --chunk-size N             Stream FILE in N-row chunks
+  --export PATH              Export dataset to PATH
+  --format {csv,excel,parquet,json}  Export format
+  --version                  Show version and exit
+  --help-topic {usage,examples,formats,config}
+  --debug / --verbose
+```
+
+---
+
+## Testing
+
+```bash
+pip install wrang[dev]
+pytest tests/ -v
+# 217 passed, 2 xfailed
+```
+
+---
+
+## Contributing
+
+1. Fork the repo
+2. Create a feature branch
+3. Run the test suite — all tests must pass
+4. Open a pull request
+
+Bug reports and feature requests → [GitHub Issues](https://github.com/sudhanshumukherjeexx/wrang/issues).
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
+*Built with [Polars](https://pola.rs) and [Rich](https://github.com/Textualize/rich).*

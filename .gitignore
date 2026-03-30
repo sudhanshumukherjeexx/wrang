@@ -148,6 +148,7 @@ Thumbs.db
 
 # Project specific
 *.bak
+*.backup
 *.tmp
 *.temp
 *~
@@ -163,3 +164,18 @@ htmlcov/
 # Local development
 .env.local
 .env.*.local
+
+# RIDE CLI generated output files
+penguins*.csv
+*_processed*.csv
+*_profile.html
+*_profile.json
+test_data/
+
+# RIDE CLI ad-hoc/dev scripts (not part of the package)
+report.md
+cli_debug_script.py
+final_fixed_test.py
+quick_test.py
+setup_ride_cli.py
+utils.py

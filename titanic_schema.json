@@ -1,0 +1,126 @@
+{
+  "columns": [
+    {
+      "name": "PassengerId",
+      "dtype": "Int64",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Survived",
+      "dtype": "Int64",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Pclass",
+      "dtype": "Int64",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Name",
+      "dtype": "String",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Sex",
+      "dtype": "String",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Age",
+      "dtype": "Float64",
+      "nullable": true,
+      "max_missing_pct": 24.9,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "SibSp",
+      "dtype": "Int64",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Parch",
+      "dtype": "Int64",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Ticket",
+      "dtype": "String",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Fare",
+      "dtype": "Float64",
+      "nullable": false,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Cabin",
+      "dtype": "String",
+      "nullable": true,
+      "max_missing_pct": 5.0,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    },
+    {
+      "name": "Embarked",
+      "dtype": "String",
+      "nullable": true,
+      "max_missing_pct": 5.2,
+      "unique": false,
+      "min_value": null,
+      "max_value": null,
+      "allowed_values": null
+    }
+  ],
+  "allow_extra_columns": true,
+  "require_all_columns": true
+}
