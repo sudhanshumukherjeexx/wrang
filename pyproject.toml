@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "wrang"
-version = "0.2.0"
+version = "0.2.1"
 description = "wrang: lightning-fast data wrangling toolkit for the terminal"
 readme = "README.md"
 authors = [{name = "Sudhanshu Mukherjee", email = "sudhanshumukherjeexx@gmail.com"}]
