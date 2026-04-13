@@ -38,7 +38,7 @@ wrang --help-topic config
 
 ```bash
 # Launch interactive mode (no file)
-ride
+wrang
 
 # Launch with a file pre-loaded
 wrang datasets/titanic.csv
@@ -290,7 +290,7 @@ python -m wrang datasets/titanic.csv --inspect
 python -m wrang --version
 ```
 
-**Expected:** Same behaviour as the `ride` command.
+**Expected:** Same behaviour as the `wrang` command.
 
 ---
 

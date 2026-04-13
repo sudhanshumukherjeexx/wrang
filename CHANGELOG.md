@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.0] - 2026-04-13
+
+### Added
+- `ride` command alias — `ride` and `wrang` are now interchangeable entry points (backward compatibility for users of the earlier `ride-cli` project)
+- Automated PyPI publishing via GitHub Actions — push a `v*` tag to release
+
+### Fixed
+- MODE imputation now correctly handles columns where null is tied with the most frequent value (`mode().drop_nulls()` before selecting the fill value)
+- `wrang/cli/interface.py` was importing `__version__` from the old `ride` package name — corrected to `wrang`
+- `wrang/cli/formatters.py` had a hardcoded version string — now reads from `wrang.__version__` dynamically
+- README code examples used non-existent methods `.get_result()` and `.remove_outliers()` — corrected to `.get_cleaned_data()`, `.get_transformed_data()`, and `.handle_outliers()`
+
+### Changed
+- Development status promoted from Alpha → Beta
+- `tests/test_automl.py` renamed to `tests/test_validator.py` (file tests the validator module, not the removed AutoML feature)
+
+---
+
 ## [0.1.0] - 2026-03-29
 
 ### Added

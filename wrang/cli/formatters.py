@@ -25,6 +25,7 @@ from rich.box import ROUNDED, DOUBLE, SIMPLE, HEAVY
 from pyfiglet import Figlet
 
 from wrang.config import get_config
+from wrang import __version__ as _version
 
 console = Console()
 
@@ -87,7 +88,7 @@ class RideFormatter:
 [bold {self.colors['secondary']}]{subtitle}[/bold {self.colors['secondary']}]
 [{self.colors['dim']}]{description}[/{self.colors['dim']}]
 
-[{self.colors['info']}]v0.1.0 | Built with Polars[/{self.colors['info']}]"""
+[{self.colors['info']}]v{_version} | Built with Polars[/{self.colors['info']}]"""
         
         banner_panel = Panel(
             Align.center(banner_content),

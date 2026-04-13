@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "wrang"
-version = "0.1.0"
+version = "0.2.0"
 description = "wrang: lightning-fast data wrangling toolkit for the terminal"
 readme = "README.md"
 authors = [{name = "Sudhanshu Mukherjee", email = "sudhanshumukherjeexx@gmail.com"}]
 license = {text = "MIT"}
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
@@ -82,6 +82,7 @@ Changelog = "https://github.com/sudhanshumukherjeexx/wrang/blob/main/CHANGELOG.m
 
 [project.scripts]
 wrang = "wrang.main:cli_entry_point"
+ride  = "wrang.main:cli_entry_point"
 
 [tool.setuptools.packages.find]
 where = ["."]

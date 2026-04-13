@@ -545,7 +545,10 @@ class DataCleaner:
                     self.df = self.df.with_columns(self.df[col].fill_null(median_val))
             
             elif strategy == ImputationStrategy.MODE:
-                mode_val = self.df[col].mode().first()
+                mode_series = self.df[col].mode().drop_nulls()
+                if len(mode_series) == 0:
+                    return
+                mode_val = mode_series.first()
                 self.df = self.df.with_columns(self.df[col].fill_null(mode_val))
             
             elif strategy == ImputationStrategy.FORWARD_FILL:

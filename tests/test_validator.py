@@ -1,9 +1,4 @@
-"""
-Tests for ride/core/validator.py (DataValidator / schema validation).
-
-The old AutoML module has been removed; this file now covers the schema
-validation system that replaced it.
-"""
+"""Tests for wrang/core/validator.py — DataValidator / schema validation."""
 
 import polars as pl
 import pytest

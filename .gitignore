@@ -170,7 +170,11 @@ penguins*.csv
 *_processed*.csv
 *_profile.html
 *_profile.json
+*_schema.json
 test_data/
+
+# Local Claude Code settings
+.claude/
 
 # RIDE CLI ad-hoc/dev scripts (not part of the package)
 report.md

@@ -27,6 +27,8 @@ pip install wrang[full]      # everything
 
 Requires Python 3.10+.
 
+> **Migrating from `ride-cli`?** Both `wrang` and `ride` commands are installed — they are identical aliases. Your existing `ride ...` scripts will continue to work unchanged.
+
 ---
 
 ## Quick start
@@ -142,8 +144,8 @@ cleaned = (
     .handle_missing_values(ImputationStrategy.MEDIAN, columns=["age", "salary"])
     .handle_missing_values(ImputationStrategy.MODE,   columns=["dept"])
     .remove_duplicates()
-    .remove_outliers(method="iqr", factor=1.5)
-    .get_result()
+    .handle_outliers(method="iqr", action="remove")
+    .get_cleaned_data()
 )
 ```
 
@@ -159,7 +161,7 @@ result = (
     DataTransformer(df)
     .encode_categorical_features(method=EncodingMethod.ONEHOT, columns=["dept"])
     .scale_features(method=ScalingMethod.STANDARD, columns=["age", "salary"])
-    .get_result()
+    .get_transformed_data()
 )
 
 # Or use the pipeline builder
@@ -168,7 +170,7 @@ result = (
     .encode_categorical_features(method=EncodingMethod.LABEL)
     .scale_features(method=ScalingMethod.ROBUST)
     .create_polynomial_features(degree=2)
-    .get_result()
+    .get_transformed_data()
 )
 ```
 
@@ -226,7 +228,7 @@ df_clean = (
     DataCleaner(df)
     .handle_missing_values(ImputationStrategy.MEDIAN)
     .remove_duplicates()
-    .get_result()
+    .get_cleaned_data()
 )
 
 # Explore

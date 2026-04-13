@@ -615,10 +615,10 @@ class RideCLI:
     def _show_version(self) -> None:
         """Display version information"""
         try:
-            from ride import __version__
+            from wrang import __version__
             version = __version__
         except ImportError:
-            version = "0.1.0"
+            version = "unknown"
         
         version_info = f"""wrang v{version}
 
