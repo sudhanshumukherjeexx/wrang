@@ -4,8 +4,8 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/wrang.svg?color=blue)](https://pypi.org/project/wrang/)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://pypi.org/project/wrang/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-217%20passing-brightgreen)](#testing)
+[![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/sudhanshumukherjeexx/wrang/blob/main/LICENSE)
+[![Tests](https://img.shields.io/badge/tests-217%20passing-brightgreen)](https://github.com/sudhanshumukherjeexx/wrang/actions)
 
 `wrang` is a terminal-native data analysis toolkit. Load, inspect, clean, transform, and export datasets without writing a single line of boilerplate. Use it interactively, script it as a Python library, or wire it into CI pipelines.
 
