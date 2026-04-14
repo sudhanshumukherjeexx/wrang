@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.2] - 2026-04-13
+
+### Fixed
+- `plotext` unpinned from `==5.2.8` to `>=5.3.0` — older version imported `pkg_resources` which is not available on Python 3.12+ without `setuptools`
+- `pyfiglet` unpinned from `==0.8.post1` to `>=1.0.2` — same root cause; 1.x dropped the `pkg_resources` dependency
+
+---
+
 ## [0.2.0] - 2026-04-13
 
 ### Added

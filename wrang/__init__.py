@@ -14,7 +14,7 @@ A modern, efficient toolkit for data analysis and preparation that provides:
 import os
 
 # Version information
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 __author__ = "Sudhanshu Mukherjee"
 __email__ = "sudhanshumukherjeexx@gmail.com"
 __url__ = "https://github.com/sudhanshumukherjeexx/wrang"
